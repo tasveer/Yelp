@@ -50,6 +50,9 @@ BusinessTblViewCell *_stubCell;
     if (self) {
         [self createViewElements];
         
+        // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
+        self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKeyH consumerSecret:kYelpConsumerSecretH accessToken:kYelpTokenH accessSecret:kYelpTokenSecretH];
+        
         // Check the last search term, if it exists
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         if ([[NSUserDefaults standardUserDefaults] valueForKey:@"lastSearch"]) {
@@ -124,7 +127,7 @@ BusinessTblViewCell *_stubCell;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 
     // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
-    self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKeyH consumerSecret:kYelpConsumerSecretH accessToken:kYelpTokenH accessSecret:kYelpTokenSecretH];
+    //self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKeyH consumerSecret:kYelpConsumerSecretH accessToken:kYelpTokenH accessSecret:kYelpTokenSecretH];
     
     [self.locationManager startUpdatingLocation];
     
