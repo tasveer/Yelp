@@ -94,8 +94,8 @@
     {
         UISwitch *switchView = [[UISwitch alloc] initWithFrame:CGRectZero];
         switchView.onTintColor = [UIColor redColor];
-        switchView.offImage = [UIImage imageNamed:@"miniMapLogo"];
-        NSLog(@"minimaplogo image %@", switchView.onImage);
+        //switchView.offImage = [UIImage imageNamed:@"miniMapLogo"];
+        //NSLog(@"minimaplogo image %@", switchView.offImage);
         cell.accessoryView = switchView;
         if (self.selectedOptions[rowStr] != nil) {
             [switchView setOn:[self.selectedOptions[rowStr]  isEqual: @"1"] ? YES : NO animated:NO];
@@ -121,17 +121,17 @@
             }
         } else {
             if ([sectionStr isEqualToString:@"Categories"]) {
-                NSLog(@"expanding on categories for row: %@", rowStr);
-                NSLog(@"selected category: %@", self.selectedCategories[rowStr]);
+                //NSLog(@"expanding on categories for row: %@", rowStr);
+                //NSLog(@"selected category: %@", self.selectedCategories[rowStr]);
                 if ([self.selectedCategories[rowStr] isEqualToString:rowStr]) {
                     cell.accessoryType = UITableViewCellAccessoryCheckmark;
-                    NSLog(@"Adding check mark for row: %@", rowStr);
+                    //NSLog(@"Adding check mark for row: %@", rowStr);
                 } else {
                     cell.accessoryType = UITableViewCellAccessoryNone;
                 }
             } else {
                 if ([self.selectedOptions[sectionStr] isEqualToString:rowStr]) {
-                    NSLog(@"Found expanded section %@ : rowStr %@ == %@", sectionStr, rowStr, self.selectedOptions[sectionStr]);
+                    //NSLog(@"Found expanded section %@ : rowStr %@ == %@", sectionStr, rowStr, self.selectedOptions[sectionStr]);
                     cell.accessoryType = UITableViewCellAccessoryCheckmark;
                 } else {
                     cell.accessoryType = UITableViewCellAccessoryNone;
@@ -150,7 +150,7 @@
     NSString *sectionStr = self.sections[indexPath.section];
     NSString *rowStr = self.sectionContents[sectionStr][indexPath.row];
     
-    NSLog(@"Selected Section: %@ row %@", sectionStr, rowStr);
+    //NSLog(@"Selected Section: %@ row %@", sectionStr, rowStr);
     
     if (![sectionStr isEqualToString:@"Most Popular"]) {
         
@@ -169,19 +169,19 @@
                 [tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic ];
             } else if ([rowStr isEqualToString:@"Selected"]) {
                 self.collapsed[@(indexPath.section)] = @(![self.collapsed[@(indexPath.section)] boolValue]);
-                NSLog(@"Reloading on Selected for rowStr: %@", rowStr);
+                //NSLog(@"Reloading on Selected for rowStr: %@", rowStr);
                 [tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic ];
             } else {
                 cell.textLabel.text = rowStr;
                 if (self.selectedCategories[rowStr] == nil) {
-                    NSLog(@"Selecting category for rowStr %@ --> %@", rowStr, self.selectedCategories[rowStr]);
+                    //NSLog(@"Selecting category for rowStr %@ --> %@", rowStr, self.selectedCategories[rowStr]);
                     self.selectedCategories[rowStr] = rowStr;
-                    NSLog(@"selected category: %@", self.selectedCategories[rowStr]);
+                    //NSLog(@"selected category: %@", self.selectedCategories[rowStr]);
                     //cell.accessoryType = UITableViewCellAccessoryCheckmark;
                 } else {
                     [self.selectedCategories removeObjectForKey:rowStr ];
                     cell.accessoryType = UITableViewCellAccessoryNone;
-                    NSLog(@"Deselcting category %@", rowStr);
+                    //NSLog(@"Deselcting category %@", rowStr);
                 }
             }
         } else {

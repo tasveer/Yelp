@@ -15,6 +15,6 @@
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
--(IBAction)filterButtonPressed:(id)sender;
+-(IBAction)filterButtonPressed;
 
 @end

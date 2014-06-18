@@ -110,6 +110,7 @@
         parameters[@"deals_filter"] = [NSString stringWithFormat:@"%d",  offeringDeal ];
     }
 
+    //NSLog(@"location: %@", location);
     
     if ([location isEqualToString:@"0.000000,0.000000"]) {
         parameters[@"location"] = @"San Francisco";

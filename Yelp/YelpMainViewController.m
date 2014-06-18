@@ -9,8 +9,8 @@
 #import "YelpMainViewController.h"
 #import "YelpClient.h"
 #import "Business.h"
-//#import "BusinessTableViewCell.h"
 #import "BusinessTblViewCell.h"
+//#import "BusinessTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
 #import "MBProgressHUD.h"
 #import "FilterViewController.h"
@@ -48,8 +48,15 @@ BusinessTblViewCell *_stubCell;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self createViewElements];        
-        self.searchTerm = @"Thai";
+        [self createViewElements];
+        
+        // Check the last search term, if it exists
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if ([[NSUserDefaults standardUserDefaults] valueForKey:@"lastSearch"]) {
+            self.searchTerm = [ defaults stringForKey:@"lastSearch"];
+        } else {
+            self.searchTerm = @"Thai";
+        }
     }
     return self;
 }
@@ -121,6 +128,12 @@ BusinessTblViewCell *_stubCell;
     
     [self.locationManager startUpdatingLocation];
     
+    // Remember the last search.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [ defaults setObject:self.searchTerm forKey:@"lastSearch"];
+    [ defaults synchronize];
+
+
     //NSLog(@"current location %f %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude);
     NSString *location = [ NSString stringWithFormat:@"%f,%f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
     

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		37426DF7194BDAB2003F245D /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 37426DF6194BDAB2003F245D /* Business.m */; };
-		37426DFC194CE856003F245D /* BusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37426DFA194CE856003F245D /* BusinessTableViewCell.m */; };
-		37426DFD194CE856003F245D /* BusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37426DFB194CE856003F245D /* BusinessTableViewCell.xib */; };
 		37426E01194DFA57003F245D /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37426DFF194DFA57003F245D /* FilterViewController.m */; };
 		37426E02194DFA57003F245D /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37426E00194DFA57003F245D /* FilterViewController.xib */; };
 		37426E0B194E1A3D003F245D /* YelpMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37426E09194E1A3D003F245D /* YelpMainViewController.m */; };
@@ -46,9 +44,6 @@
 /* Begin PBXFileReference section */
 		37426DF5194BDAB2003F245D /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
 		37426DF6194BDAB2003F245D /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
-		37426DF9194CE856003F245D /* BusinessTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessTableViewCell.h; sourceTree = "<group>"; };
-		37426DFA194CE856003F245D /* BusinessTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessTableViewCell.m; sourceTree = "<group>"; };
-		37426DFB194CE856003F245D /* BusinessTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessTableViewCell.xib; sourceTree = "<group>"; };
 		37426DFE194DFA57003F245D /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		37426DFF194DFA57003F245D /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		37426E00194DFA57003F245D /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
@@ -119,9 +114,6 @@
 		37426DF8194CE801003F245D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				37426DF9194CE856003F245D /* BusinessTableViewCell.h */,
-				37426DFA194CE856003F245D /* BusinessTableViewCell.m */,
-				37426DFB194CE856003F245D /* BusinessTableViewCell.xib */,
 				379EBDC11950E3E000226FAB /* BusinessTblViewCell.h */,
 				379EBDC21950E3E000226FAB /* BusinessTblViewCell.m */,
 				379EBDC31950E3E000226FAB /* BusinessTblViewCell.xib */,
@@ -318,7 +310,6 @@
 				379EBDC51950E3E000226FAB /* BusinessTblViewCell.xib in Resources */,
 				37426E02194DFA57003F245D /* FilterViewController.xib in Resources */,
 				42FD6C5518DC286B000BF2B9 /* InfoPlist.strings in Resources */,
-				37426DFD194CE856003F245D /* BusinessTableViewCell.xib in Resources */,
 				37426E0C194E1A3D003F245D /* YelpMainViewController.xib in Resources */,
 				42FD6C5D18DC286B000BF2B9 /* Images.xcassets in Resources */,
 			);
@@ -374,7 +365,6 @@
 			files = (
 				37426DF7194BDAB2003F245D /* Business.m in Sources */,
 				37426E0B194E1A3D003F245D /* YelpMainViewController.m in Sources */,
-				37426DFC194CE856003F245D /* BusinessTableViewCell.m in Sources */,
 				42FD6C5B18DC286B000BF2B9 /* AppDelegate.m in Sources */,
 				42FD6C5718DC286B000BF2B9 /* main.m in Sources */,
 				379EBDC41950E3E000226FAB /* BusinessTblViewCell.m in Sources */,

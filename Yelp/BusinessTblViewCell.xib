@@ -45,11 +45,11 @@
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-62-3s7">
-                        <rect key="frame" x="117" y="58" width="148" height="14"/>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="174" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-62-3s7">
+                        <rect key="frame" x="117" y="58" width="174" height="14"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="148" id="9U4-aT-39K"/>
+                            <constraint firstAttribute="width" constant="174" id="9U4-aT-39K"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <nil key="highlightedColor"/>
@@ -81,7 +81,7 @@
                     <constraint firstItem="Wov-62-3s7" firstAttribute="top" secondItem="o9c-Mo-q52" secondAttribute="bottom" constant="3" id="NxB-ci-xTk"/>
                     <constraint firstItem="nyY-wb-ReL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="TSf-Ye-8a3"/>
                     <constraint firstAttribute="bottom" secondItem="8J1-KC-met" secondAttribute="bottom" constant="15" id="WHP-28-e5K"/>
-                    <constraint firstAttribute="trailing" secondItem="Wov-62-3s7" secondAttribute="trailing" constant="55" id="cxc-OL-TlN"/>
+                    <constraint firstAttribute="trailing" secondItem="Wov-62-3s7" secondAttribute="trailing" constant="29" id="cxc-OL-TlN"/>
                     <constraint firstItem="PpP-du-ZSj" firstAttribute="leading" secondItem="n57-xI-SbY" secondAttribute="trailing" constant="24" id="e0O-W2-VTT"/>
                     <constraint firstItem="PpP-du-ZSj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kZR-zc-4iz"/>
                     <constraint firstItem="o9c-Mo-q52" firstAttribute="top" secondItem="n57-xI-SbY" secondAttribute="bottom" constant="7" id="pnF-Lg-oMh"/>
