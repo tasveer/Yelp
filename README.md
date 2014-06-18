@@ -15,4 +15,4 @@ Time Spent: 20 Hours
      
 Here are the screen shots
 
-![Yelp Demo](https://github.com/tasveer/Yelp/blob/master/YelpDemo.gif)
+![Yelp Demo](https://github.com/tasveer/Yelp/blob/master/YelpDemo.gif?raw=true)
