@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BusinessTblViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nyY-wb-ReL">
+                        <rect key="frame" x="9" y="14" width="100" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="mRB-DV-Ujo"/>
+                            <constraint firstAttribute="width" constant="100" id="tiU-RU-y2W"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="n57-xI-SbY">
+                        <rect key="frame" x="117" y="15" width="130" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1s5-9A-loO">
+                        <rect key="frame" x="117" y="40" width="65" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="peg-Gk-Z7N"/>
+                            <constraint firstAttribute="height" constant="15" id="xkw-HR-Xcb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9c-Mo-q52">
+                        <rect key="frame" x="190" y="40" width="75" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="gfV-nh-4ed"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-62-3s7">
+                        <rect key="frame" x="117" y="58" width="148" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="148" id="9U4-aT-39K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="148" translatesAutoresizingMaskIntoConstraints="NO" id="8J1-KC-met">
+                        <rect key="frame" x="117" y="109" width="148" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpP-du-ZSj">
+                        <rect key="frame" x="271" y="15" width="42" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="FT7-Ew-8fB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8J1-KC-met" secondAttribute="trailing" constant="55" id="0Pd-wu-U9Q"/>
+                    <constraint firstItem="Wov-62-3s7" firstAttribute="leading" secondItem="nyY-wb-ReL" secondAttribute="trailing" constant="8" id="9ii-iW-54b"/>
+                    <constraint firstItem="8J1-KC-met" firstAttribute="leading" secondItem="nyY-wb-ReL" secondAttribute="trailing" constant="8" id="AD8-4k-Ohk"/>
+                    <constraint firstItem="o9c-Mo-q52" firstAttribute="leading" secondItem="1s5-9A-loO" secondAttribute="trailing" constant="8" id="DFF-aF-XDe"/>
+                    <constraint firstItem="nyY-wb-ReL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="HSk-lC-bTH"/>
+                    <constraint firstAttribute="trailing" secondItem="PpP-du-ZSj" secondAttribute="trailing" constant="7" id="NZF-1W-WGB"/>
+                    <constraint firstItem="Wov-62-3s7" firstAttribute="top" secondItem="o9c-Mo-q52" secondAttribute="bottom" constant="3" id="NxB-ci-xTk"/>
+                    <constraint firstItem="nyY-wb-ReL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="TSf-Ye-8a3"/>
+                    <constraint firstAttribute="bottom" secondItem="8J1-KC-met" secondAttribute="bottom" constant="15" id="WHP-28-e5K"/>
+                    <constraint firstAttribute="trailing" secondItem="Wov-62-3s7" secondAttribute="trailing" constant="55" id="cxc-OL-TlN"/>
+                    <constraint firstItem="PpP-du-ZSj" firstAttribute="leading" secondItem="n57-xI-SbY" secondAttribute="trailing" constant="24" id="e0O-W2-VTT"/>
+                    <constraint firstItem="PpP-du-ZSj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kZR-zc-4iz"/>
+                    <constraint firstItem="o9c-Mo-q52" firstAttribute="top" secondItem="n57-xI-SbY" secondAttribute="bottom" constant="7" id="pnF-Lg-oMh"/>
+                    <constraint firstItem="1s5-9A-loO" firstAttribute="leading" secondItem="nyY-wb-ReL" secondAttribute="trailing" constant="8" id="rUg-wa-uBp"/>
+                    <constraint firstItem="n57-xI-SbY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="vcN-5x-N8m"/>
+                    <constraint firstItem="1s5-9A-loO" firstAttribute="top" secondItem="n57-xI-SbY" secondAttribute="bottom" constant="7" id="vuw-Ae-iTl"/>
+                    <constraint firstAttribute="bottom" secondItem="nyY-wb-ReL" secondAttribute="bottom" constant="15" id="whw-rT-VwM"/>
+                    <constraint firstAttribute="trailing" secondItem="o9c-Mo-q52" secondAttribute="trailing" constant="55" id="xsG-v2-bX6"/>
+                    <constraint firstItem="n57-xI-SbY" firstAttribute="leading" secondItem="nyY-wb-ReL" secondAttribute="trailing" constant="8" id="zoe-ax-Q6R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="Wov-62-3s7" id="Qao-yW-RWr"/>
+                <outlet property="businessImageView" destination="nyY-wb-ReL" id="eNW-i9-DTM"/>
+                <outlet property="categoryLabel" destination="8J1-KC-met" id="1no-dG-RF8"/>
+                <outlet property="distanceLabel" destination="PpP-du-ZSj" id="6St-Ha-LRt"/>
+                <outlet property="nameLabel" destination="n57-xI-SbY" id="MsS-c6-7nI"/>
+                <outlet property="ratingsImageView" destination="1s5-9A-loO" id="YZT-6x-E8L"/>
+                <outlet property="reviewLabel" destination="o9c-Mo-q52" id="89J-JV-l2x"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
