@@ -48,7 +48,7 @@ BusinessTblViewCell *_stubCell;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self createViewElements];
+        //[self createViewElements];
         
         // You can register for Yelp API keys here: http://www.yelp.com/developers/manage_api_keys
         self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKeyH consumerSecret:kYelpConsumerSecretH accessToken:kYelpTokenH accessSecret:kYelpTokenSecretH];
@@ -60,6 +60,7 @@ BusinessTblViewCell *_stubCell;
         } else {
             self.searchTerm = @"Thai";
         }
+        [ self queryYelp];
     }
     return self;
 }
@@ -69,6 +70,8 @@ BusinessTblViewCell *_stubCell;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [self createViewElements];
+
     UINib *cellNib = [UINib nibWithNibName:@"BusinessTblViewCell" bundle:nil];
     [self.tableView registerNib:cellNib forCellReuseIdentifier:@"BusinessTblViewCell"];
     
@@ -79,7 +82,6 @@ BusinessTblViewCell *_stubCell;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    [ self queryYelp];
 }
 
 - (void)configureCell:(BusinessTblViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
