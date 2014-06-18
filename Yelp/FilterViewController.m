@@ -288,7 +288,13 @@
     if ([self.selectedCategories count]) {
         [defaults setObject:[self.selectedCategories allKeys] forKey:@"categories" ];
 
+    } else {
+        if ([[NSUserDefaults standardUserDefaults] valueForKey:@"categories"]) {
+            // Remove all unselected stories
+            [ defaults removeObjectForKey:@"categories"];
+        }
     }
+    
     [ defaults synchronize];
     
     if ([self.delegate respondsToSelector:@selector(startNewSearch)]) {

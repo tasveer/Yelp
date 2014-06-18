@@ -28,17 +28,16 @@
 {
     /*
      self.nameLabel.text = [ NSString stringWithFormat:@"%d. %@", index, self.buisness.name];
-     if (self.buisness.neighbourhoods != nil) {
-     self.addressLabel.text = [ NSString stringWithFormat:@"%@, %@", self.buisness.address, self.buisness.neighbourhoods ];
-     } else {
-     self.addressLabel.text = self.buisness.address;
-     }
-     self.categoryLabel.text = self.buisness.categories;
-     self.reviewLabel.text = [NSString stringWithFormat:@"%d reviews", self.buisness.reviewCount ];
-     self.distanceLabel.text = [NSString stringWithFormat:@"%0.2g mi", self.buisness.distance*0.000621371];
-     //[self.addressLabel sizeToFit ];
-     //[self.categoryLabel sizeToFit];
+    if (self.buisness.neighbourhoods != nil) {
+        self.addressLabel.text = [ NSString stringWithFormat:@"%@, %@", self.buisness.address, self.buisness.neighbourhoods ];
+    } else {
+        self.addressLabel.text = self.buisness.address;
+    }
+    self.categoryLabel.text = self.buisness.categories;
+    self.reviewLabel.text = [NSString stringWithFormat:@"%d reviews", self.buisness.reviewCount ];
+    self.distanceLabel.text = [NSString stringWithFormat:@"%0.2g mi", self.buisness.distance*0.000621371];
      */
+
     
     NSURLRequest *request = [NSURLRequest requestWithURL:self.buisness.ratingsUrl];
     
@@ -101,6 +100,7 @@
                                                self.categoryLabel.text = self.buisness.categories;
                                                self.reviewLabel.text = [NSString stringWithFormat:@"%d reviews", self.buisness.reviewCount ];
                                                self.distanceLabel.text = [NSString stringWithFormat:@"%0.2g mi", self.buisness.distance*0.000621371];
+                                               
                                                //[self.addressLabel sizeToFit ];
                                                //[self.categoryLabel sizeToFit];
                                                
@@ -117,6 +117,6 @@
     }
     self.categoryLabel.text = self.buisness.categories;
     self.reviewLabel.text = [NSString stringWithFormat:@"%d reviews", self.buisness.reviewCount ];
-    self.distanceLabel.text = [NSString stringWithFormat:@"%0.2g mi", self.buisness.distance*0.000621371];
+    self.distanceLabel.text = [NSString stringWithFormat:@"%0.2g mi", self.buisness.distance*0.000621371];    
 }
 @end
